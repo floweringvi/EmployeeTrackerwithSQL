@@ -24,5 +24,6 @@ CREATE TABLE employee (
     role_id INTEGER,
     FOREIGN KEY (role_id) REFERENCES role(role_id),
     manager_id INTEGER 
+    FOREIGN KEY (manager_id) REFERENCES employee(id)
     --This references a role that may or may not exist
 );
